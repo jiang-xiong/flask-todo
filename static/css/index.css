@@ -63,3 +63,12 @@ span {
     color: #175199;
     cursor: pointer;
 }
+.login-form {
+    display: none;
+}
+.signup-form {
+    display: none;
+}
+.active {
+    display: block;
+}

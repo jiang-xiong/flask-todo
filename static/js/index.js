@@ -1,10 +1,11 @@
-var xxx = function () {
+var changeTeb = function () {
     $('span').on('click', function () {
-        console.log('click')
+        $('.signup-form').toggleClass('active')
+        $('.login-form').toggleClass('active')
     })
 }
 
 var __main = function () {
-    xxx()
+    changeTeb()
 }
 __main()
