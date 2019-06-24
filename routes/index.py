@@ -1,7 +1,6 @@
 from flask import (
     render_template,
     Blueprint,
-
 )
 
 main = Blueprint('index', __name__)
