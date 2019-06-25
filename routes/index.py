@@ -5,8 +5,10 @@ from flask import (
     redirect,
     url_for,
     session,
+    send_from_directory,
 )
 
+from models.base_model import db
 from models.user import User
 
 main = Blueprint('index', __name__)
@@ -14,6 +16,7 @@ main = Blueprint('index', __name__)
 
 @main.route("/")
 def index():
+    db.create_all()
     return render_template("index.html")
 
 
@@ -34,3 +37,9 @@ def login():
         session['user_id'] = u.id
         session.permanent = True
         return redirect(url_for('todo.index'))
+
+
+@main.route("/logout", methods=['get'])
+def logout():
+    session.pop("user_id")
+    return redirect(url_for("index.index"))

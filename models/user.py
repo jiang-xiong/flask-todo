@@ -11,7 +11,6 @@ class User(SQLMixin, db.Model):
     # 把的注册用户写入数据库
     @classmethod
     def signup(cls, form):
-        db.create_all()
         User.new(form)
 
     # 返回第一个符合用户名，密码的用户
