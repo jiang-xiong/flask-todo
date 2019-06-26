@@ -1,0 +1,54 @@
+.container {
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.center-box {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    display: block;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0084ff;
+    border-radius: 3px;
+    border: 1px solid #0084ff;
+}
+label {
+    display: block;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #17a2b8;
+    border-radius: 3px;
+    border: 1px solid #17a2b8;
+    position: relative;
+}
+label span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>setting</title>
+    <link rel="stylesheet" href="/static/css/setting.css">
+</head>
+<body>
+    <avatar class="center-box">
+        <img src="{{ user.image }}">
+    </avatar>
+    <div class="container">
+        <form method="post"
+            action="{{ url_for('setting.add_avatar') }}"
+            enctype="multipart/form-data"
+            >
+            <input type="file" id="id-file" name="avatar" class="inputfile">
+            <label for="id-file">
+                <span>Choose</span>
+            </label>
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

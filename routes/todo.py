@@ -16,7 +16,7 @@ from models.base_model import db
 main = Blueprint('todo', __name__)
 
 
-@main.route("/tasks")
+@main.route("/")
 def index():
     u = current_user()
     ts = Todo.all(user_id=u.id)
@@ -68,8 +68,3 @@ def done():
         response='success to done task',
     )
     return jsonify(response)
-
-
-@main.route('/static/img/<filename>')
-def image(filename):
-    return send_from_directory('images', filename)

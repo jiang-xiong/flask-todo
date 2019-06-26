@@ -2,6 +2,7 @@ from flask import Flask
 
 from routes.index import main as index_routes
 from routes.todo import main as todo_routes
+from routes.setting import main as setting_routes
 
 from models.base_model import db
 
@@ -9,6 +10,7 @@ from models.base_model import db
 def register_routes(app):
     app.register_blueprint(index_routes)
     app.register_blueprint(todo_routes, url_prefix='/todo')
+    app.register_blueprint(setting_routes, url_prefix='/setting')
 
 
 def configured_db(app):
