@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .page {
+        /* border: 1px solid red; */
+      }
+      img {
+        width: 500px;
+        height: 300px;
+        /* border: 1px solid red; */
+        display: block;
+      }
+      .picture {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: 1px solid red; */
+      }
+      .button span {
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+
+      }
+      .right {
+        position: absolute;
+        left: 10px;
+        top: 112px;
+
+      }
+      .left {
+        position: absolute;
+        right: 10px;
+        top: 112px;
+      }
+      .indicators span {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: lightgray;
+        display: block;
+        position: relative;
+        margin-right: 5px;
+        font-size: 14px;
+        color: black;
+        text-align: center;
+        float: left;
+        margin-right: 15px;
+        left: 41%;
+        bottom: 25px;
+        cursor: pointer;
+      }
+      .active {
+        background: white !important;
+        transition: opacity 2s linear;
+        opacity:0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="picture">
+        <img class="img" src="1.jpg">
+        <span class="button">
+          <span class="right"> < </span>
+          <span class="left"> > </span>
+          <span class="indicators">
+            <span class="indicator1 active" data-id=1>1</span>
+            <span class="indicator2" data-id=2>2</span>
+            <span class="indicator3" data-id=3>3</span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </body>
+  <script src="tao.js"></script>
+  <script>
+    var right = e('.left')
+    var left = e('.right')
+    var img = e('.img')
+    var getImags = function () {
+      var imgs = ['1.jpg','2.jpg','3.jpg']
+      return imgs
+    }
+    var bindLeft = function() {
+      bindEvent(left, 'click', function() {
+       // log('left')
+       var src = img.attributes[1].value
+       // log(typeof src, src)
+       var imgs = getImags()
+       for (var i = 0; i < imgs.length; i++) {
+         if(src == imgs[i]) {
+           var now = i
+           var next = (now - 1 + imgs.length) % imgs.length
+           break
+         }
+       }
+       // log(next)
+       // log(imgs[next])
+       img.src = imgs[next]
+       var element = '.indicator' + (next + 1)
+       var currentIndicator = e(element)
+       // log(currentIndicator)
+       removeClassAll('active')
+       toggleClass(currentIndicator, 'active')
+     })
+    }
+    bindLeft()
+
+    var bindRight = function() {
+      bindEvent(right, 'click', function() {
+       // log('left')
+       var src = img.attributes[1].value
+       // log(typeof src, src)
+       var imgs = getImags()
+       for (var i = 0; i < imgs.length; i++) {
+         if(src == imgs[i]) {
+           var now = i
+           var next = (now + 1 + imgs.length) % imgs.length
+           break
+         }
+       }
+       // log(next)
+       // log(imgs[next])
+       img.src = imgs[next]
+       var element = '.indicator' + (next + 1)
+       var currentIndicator = e(element)
+       // log(currentIndicator)
+       removeClassAll('active')
+       toggleClass(currentIndicator, 'active')
+     })
+    }
+    bindRight()
+
+    var bindSwitch = function () {
+      var indicators = e('.indicators')
+      var imgs = getImags()
+
+      bindEvent(indicators, 'click', function (e) {
+        var target = e.target
+        // log(target)
+        var id = target.dataset.id
+        var index = id -1
+        // log(typeof index, index)
+        img.src = imgs[index]
+        removeClassAll('active')
+        toggleClass(target, 'active')
+      })
+    }
+    bindSwitch()
+
+  </script>
+</html>

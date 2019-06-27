@@ -28,10 +28,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="320">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
               <folding>
                 <element signature="e#0#110#0" expanded="true" />
+                <element signature="e#247#303#0" />
+                <element signature="e#365#450#0" />
+                <element signature="e#510#753#0" />
               </folding>
             </state>
           </provider>
@@ -66,9 +69,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="832" />
-    <option name="y" value="232" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="82" />
+    <option name="y" value="-11" />
     <option name="width" value="1115" />
     <option name="height" value="947" />
   </component>
@@ -177,15 +180,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="309" y="64" width="926" height="631" extended-state="0" />
-    <editor active="true" />
+    <frame x="55" y="-7" width="1233" height="735" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16008772" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1197703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1880998" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1568" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,10 +300,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="320">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
           <folding>
             <element signature="e#0#110#0" expanded="true" />
+            <element signature="e#247#303#0" />
+            <element signature="e#365#450#0" />
+            <element signature="e#510#753#0" />
           </folding>
         </state>
       </provider>
