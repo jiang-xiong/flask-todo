@@ -24,7 +24,7 @@ var showTasks = function (response) {
         var id = response[i].id
         var t = response[i].task
         var done = response[i].done
-        log(done)
+        // log(done)
         var template = templateTask(id, t, done)
         htmls.push(template)
     }
@@ -49,14 +49,32 @@ var templateTask = function (id, task, done) {
     return t
 }
 
-var addTask = function () {
+var appendTasks = function () {
+    var length = 0
+    var request = {
+        method: 'GET',
+        url: '/todo/all',
+        data: '',
+        dataType: "json",
+        success: function(response) {
+            // log('response', response)
+            // clearTasks()
+            // showTasks(response)
+            id = response[0].id + 1
+            addTask(id)
+        }
+    }
+    $.ajax(request)
+}
+
+var addTask = function (id) {
     $('#id-btn-add').on('click', function () {
         var task = $('#id-input').val()
-        // var html = templateTask(id, task)
         var userID = $('#user-id').val()
-        // $('content').append(html)
+        var html = templateTask(id, task)
+        $('content').append(html)
         addToDB(task, userID)
-        renderTasks()
+        // renderTasks()
     })
 }
 
@@ -83,8 +101,9 @@ var deleteTask = function () {
         var todo = target.closest('.todo')
         var id = todo.dataset.id
         // log(typeof id)
+        todo.remove()
         deleteFromDB(id)
-        renderTasks()
+        // renderTasks()
     })
 }
 
@@ -152,7 +171,8 @@ var doneFromDB = function (id, done) {
 
 var __main = function () {
     renderTasks()
-    addTask()
+    // addTask()
+    appendTasks()
     deleteTask()
     doneTask()
 }
