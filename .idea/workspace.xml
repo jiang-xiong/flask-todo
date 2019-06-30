@@ -52,8 +52,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="207" />
-    <option name="y" value="115" />
+    <option name="x" value="600" />
+    <option name="y" value="123" />
     <option name="width" value="1116" />
     <option name="height" value="948" />
   </component>
@@ -106,7 +106,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -162,7 +162,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="138" y="77" width="744" height="632" extended-state="0" />
+    <frame x="400" y="82" width="744" height="632" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
