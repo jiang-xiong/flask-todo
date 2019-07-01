@@ -26,7 +26,7 @@ def index():
 
 @main.route('/add', methods=['POST'])
 def add_avatar():
-    file: FileStorage = request.files['avatar']
+    file = request.files['avatar']
     suffix = file.filename.split('.')[-1]
     filename = '{}.{}'.format(str(uuid.uuid4()), suffix)
     path = os.path.join('static/img', filename)
