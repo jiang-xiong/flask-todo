@@ -19,6 +19,7 @@
         height: 300px;
         /* border: 1px solid red; */
         display: block;
+        border-radius: 3px;
       }
       .picture {
         position: fixed;
@@ -63,8 +64,8 @@
       }
       .active {
         background: white !important;
-        transition: opacity 2s linear;
-        opacity:0.5;
+        /* transition: opacity 1s linear; */
+        /* opacity:0.8; */
       }
     </style>
   </head>
@@ -84,8 +85,29 @@
       </div>
     </div>
   </body>
-  <script src="tao.js"></script>
   <script>
+      var toggleClass = function(element, className) {
+          if (element.classList.contains(className)) {
+              element.classList.remove(className)
+          } else {
+              element.classList.add(className)
+          }
+      }
+      var bindEvent = function(element, eventName, callback) {
+          element.addEventListener(eventName, callback)
+      }
+      var removeClassAll = function(className) {
+          var selector = '.' + className
+          var elements = document.querySelectorAll(selector)
+          for (var i = 0; i < elements.length; i++) {
+              var e = elements[i]
+              e.classList.remove(className)
+          }
+      }
+      var e = function(selector) {
+          return document.querySelector(selector)
+      }
+
     var right = e('.left')
     var left = e('.right')
     var img = e('.img')
@@ -93,6 +115,7 @@
       var imgs = ['1.jpg','2.jpg','3.jpg']
       return imgs
     }
+
     var bindLeft = function() {
       bindEvent(left, 'click', function() {
        // log('left')

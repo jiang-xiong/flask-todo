@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6e487b77-bd06-45e5-990e-84d5100b7cd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/todo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/todo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/7c527197-3347-4761-b39d-ceaaacc71c3e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/swiper.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/slide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/todo.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,13 +20,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="-374">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-656">
+              <folding>
+                <element signature="e#0#135#0" expanded="true" />
+                <element signature="e#390#475#0" />
+                <element signature="e#535#778#0" />
+                <element signature="e#673#778#0" />
               </folding>
             </state>
           </provider>
@@ -30,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,18 +68,22 @@
         <option value="$PROJECT_DIR$/templates/todo.html" />
         <option value="$PROJECT_DIR$/models/user.py" />
         <option value="$PROJECT_DIR$/models/todo.py" />
-        <option value="$PROJECT_DIR$/routes/index.py" />
         <option value="$PROJECT_DIR$/routes/todo.py" />
         <option value="$PROJECT_DIR$/routes/setting.py" />
+        <option value="$PROJECT_DIR$/templates/music_player.html" />
+        <option value="$PROJECT_DIR$/routes/index.py" />
         <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="135" />
-    <option name="y" value="171" />
-    <option name="width" value="1481" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="589" />
+    <option name="y" value="115" />
+    <option name="width" value="1317" />
     <option name="height" value="948" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -72,6 +97,16 @@
             <path>
               <item name="flask-todo" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask-todo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-todo" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-todo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -139,15 +174,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="114" width="987" height="632" extended-state="0" />
-    <editor active="true" />
+    <frame x="393" y="77" width="878" height="632" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30524153" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18773946" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15517241" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -235,19 +269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#110#0" expanded="true" />
-            <element signature="e#247#303#0" />
-            <element signature="e#365#450#0" />
-            <element signature="e#510#753#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Scripts/pip3-script.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -261,12 +282,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="1221" selection-start-line="1221" selection-end-line="1221" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="-374">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-656">
+          <folding>
+            <element signature="e#0#135#0" expanded="true" />
+            <element signature="e#390#475#0" />
+            <element signature="e#535#778#0" />
+            <element signature="e#673#778#0" />
           </folding>
         </state>
       </provider>

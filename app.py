@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from flask import Flask
 
 from routes.index import main as index_routes
@@ -26,6 +28,9 @@ def configured_app():
     app.jinja_env.auto_reload = True
     app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
     app.secret_key = 'string'
+    # 修改jinja2模版,防止与vue冲突
+    app.jinja_env.variable_start_string = '{{ '
+    app.jinja_env.variable_end_string = ' }}'
 
     register_routes(app)
     configured_db(app)

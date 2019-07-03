@@ -39,7 +39,17 @@ def login():
         return redirect(url_for('todo.index'))
 
 
-@main.route("/logout", methods=['get'])
+@main.route("/logout")
 def logout():
     session.pop("user_id")
     return redirect(url_for("index.index"))
+
+
+@main.route("/player")
+def player():
+    return render_template("player.html")
+
+
+@main.route("/slide")
+def slide():
+    return render_template("slide.html")

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/static/css/player.css">
+    <script src="/static/js/vue.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="app" class="container center">
+        <h1>Player</h1>
+        <h3>a music player</h3>
+        <main>
+            <section>
+                <div class="control">
+                    <cover>
+                        <span id="id-play"
+                              v-on:click='play'
+                              v-show='showPlay'
+                        >
+                            <img src="/static/img/icon/md-play-circle.png">
+                        </span>
+                        <span id="id-pause"
+                              v-show='showPause'
+                              v-on:click='pause'
+                        >
+                            <img src="/static/img/icon/md-pause.png">
+                        </span>
+                        <span class="circle">
+
+                        </span>
+                        <img id="cover" src="/static/img/music/La Vanille-茶理理.jpg">
+                    </cover>
+                    <panel>
+                        <audio src="/static/mp3/La Vanille-茶理理.mp3" loop>
+                        </audio>
+                        <div>
+                            <span class="info">
+                                {[ name ]} - {[ author ]}
+                            </span>
+                        </div>
+                        <div>
+                            <span class="ctrl-bar">
+                                <input id="ctrl-bar" type="range" value="0">
+                            </span>
+                            <span class="icon">
+                                <span id="id-volume">
+                                    <input id="id-volume-bar"
+                                           type="range"
+                                           value="30"
+                                           v-on:click='changeVolume'
+                                           v-show='this.showVolume'
+                                    >
+                                    <img src="/static/img/icon/md-volume-high.png"
+                                         v-on:click='toggleVolume'
+                                    >
+                                </span>
+                                <span id="id-menu"
+                                      v-on:click='toggleMenu'
+                                >
+                                    <img src="/static/img/icon/md-menu.png">
+                                </span>
+                            </span>
+                        </div>
+                    </panel>
+                </div>
+                <transition name="fade">
+                    <div class="menu"
+                         v-show='this.showMenu'
+                         v-on:click='changeSong'
+                    >
+                        <div class="list" v-for="song in songs">
+                            {[ song.name ]} - {[ song.author ]}
+                        </div>
+                    </div>
+                </transition>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="/static/js/player.js"></script>
+</html>

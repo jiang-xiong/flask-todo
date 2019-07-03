@@ -148,7 +148,6 @@ var doneTask = function () {
             done = 1
         }
         doneFromDB(id, done)
-        renderTasks()
     })
 }
 
