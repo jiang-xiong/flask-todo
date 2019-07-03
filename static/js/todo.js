@@ -60,7 +60,7 @@ var appendTasks = function () {
             // log('response', response)
             // clearTasks()
             // showTasks(response)
-            id = response[0].id + 1
+            id = response.length + 1
             addTask(id)
         }
     }
